@@ -1,0 +1,13 @@
+service: mmi-alert
+provider:
+  name: aws
+  runtime: nodejs8.10
+  region: eu-central-1
+  profile: serverless
+functions:
+  mmiAlert:
+    handler: handler.mmiAlert
+    events:
+    - schedule:
+        rate: cron(*/5 * * * ? *)
+        enabled: false
