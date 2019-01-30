@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/Siddharth11/mmi-alert/issues"
   },
-  "homepage": "https://github.com/Siddharth11/mmi-alert#readme"
+  "homepage": "https://github.com/Siddharth11/mmi-alert#readme",
+  "dependencies": {
+    "axios": "^0.18.0"
+  }
 }
