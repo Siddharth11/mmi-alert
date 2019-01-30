@@ -1,0 +1,20 @@
+{
+  "name": "mmi-alert",
+  "version": "1.0.0",
+  "description": "Send email alerts whenever mmi (market mood index) crosses a threshold value",
+  "main": "handler.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Siddharth11/mmi-alert.git"
+  },
+  "keywords": [],
+  "author": "Siddharth Parmar",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Siddharth11/mmi-alert/issues"
+  },
+  "homepage": "https://github.com/Siddharth11/mmi-alert#readme"
+}
