@@ -30,8 +30,7 @@ Anyone! Just follow these steps to setup your own cron job:
 ### How are these alerts useful?
 These might be useful to you if you're a [passive investor](https://www.investopedia.com/terms/p/passiveinvesting.asp). MMI is a good overall indicator of market mood, which can be used to plan your investments.
 
-
-<hr>
+<br />
 
 ## Disclaimer
 MMI is a sentiment index and investors shouldn’t take buy/sell decisions, just based on the current value. But once an investor has decided to invest or close existing positions, the MMI can help them better time the market.
