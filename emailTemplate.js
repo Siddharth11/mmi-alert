@@ -1,15 +1,4 @@
-const { GREED, FEAR } = require('./zones.json');
-
-const backgroundColors = {
-  [FEAR]: '#105e62',
-  [GREED]: '#b5525c'
-};
-
-const messaging = {
-  [FEAR]: 'A high extreme fear value (<20) suggests a good time to open fresh positions as markets are likely to be oversold and might turn upwards.',
-  [GREED]: 'A high extreme greed (>80) suggests to be cautious in opening fresh positions as markets are overbought and likely to turn downwards.',
-}
-
+const CONSTANTS = require('./constants');
 
 const emailTemplate = (zone, mmi) => `
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office"><head>
@@ -172,7 +161,7 @@ a[x-apple-data-detectors=true] {
 
     </style>
 </head>
-<body class="clean-body" style="margin: 0;padding: 0;-webkit-text-size-adjust: 100%;background-color: ${backgroundColors[zone]}">
+<body class="clean-body" style="margin: 0;padding: 0;-webkit-text-size-adjust: 100%;background-color: ${CONSTANTS.COLORS[zone]}">
   <style type="text/css" id="media-query-bodytag">
     @media (max-width: 520px) {
       .block-grid {
@@ -230,11 +219,11 @@ a[x-apple-data-detectors=true] {
   </style>
   <!--[if IE]><div class="ie-browser"><![endif]-->
   <!--[if mso]><div class="mso-container"><![endif]-->
-  <table class="nl-container" style="border-collapse: collapse;table-layout: fixed;border-spacing: 0;mso-table-lspace: 0pt;mso-table-rspace: 0pt;vertical-align: top;min-width: 320px;Margin: 0 auto;background-color: ${backgroundColors[zone]};width: 100%" cellpadding="0" cellspacing="0">
+  <table class="nl-container" style="border-collapse: collapse;table-layout: fixed;border-spacing: 0;mso-table-lspace: 0pt;mso-table-rspace: 0pt;vertical-align: top;min-width: 320px;Margin: 0 auto;background-color: ${CONSTANTS.COLORS[zone]};width: 100%" cellpadding="0" cellspacing="0">
 	<tbody>
 	<tr style="vertical-align: top">
 		<td style="word-break: break-word;border-collapse: collapse !important;vertical-align: top">
-    <!--[if (mso)|(IE)]><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td align="center" style="background-color: ${backgroundColors[zone]};"><![endif]-->
+    <!--[if (mso)|(IE)]><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td align="center" style="background-color: ${CONSTANTS.COLORS[zone]};"><![endif]-->
 
     <div style="background-color:transparent;">
       <div style="Margin: 0 auto;min-width: 320px;max-width: 600px;overflow-wrap: break-word;word-wrap: break-word;word-break: break-word;background-color: transparent;" class="block-grid ">
@@ -259,7 +248,7 @@ a[x-apple-data-detectors=true] {
                     <div class="">
 	<!--[if mso]><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td style="padding-right: 20px; padding-left: 20px; padding-top: 20px; padding-bottom: 20px;"><![endif]-->
 	<div style="color:#555555;font-family:'Lato', Tahoma, Verdana, Segoe, sans-serif;line-height:150%; padding-right: 20px; padding-left: 20px; padding-top: 20px; padding-bottom: 20px;">
-		<div style="font-size:12px;line-height:18px;color:#555555;font-family:'Lato', Tahoma, Verdana, Segoe, sans-serif;text-align:left;"><p style="margin: 0;font-size: 14px;line-height: 21px;text-align: left"><span style="color: rgb(255, 255, 255); font-size: 20px; line-height: 30px;">${messaging[zone]}</span></p></div>
+		<div style="font-size:12px;line-height:18px;color:#555555;font-family:'Lato', Tahoma, Verdana, Segoe, sans-serif;text-align:left;"><p style="margin: 0;font-size: 14px;line-height: 21px;text-align: left"><span style="color: rgb(255, 255, 255); font-size: 20px; line-height: 30px;">${CONSTANTS.MESSAGING[zone]}</span></p></div>
 	</div>
 	<!--[if mso]></td></tr></table><![endif]-->
 </div>
