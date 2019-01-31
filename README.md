@@ -1,26 +1,22 @@
 # MMI Alert
 Send email alerts whenever mmi crosses a threshold value. This is a scheduled cron (runs Mon-Fri at 11am IST) job built using [AWS Lamda](https://aws.amazon.com/lambda/), [Serverless](https://serverless.com/) and [Node](https://nodejs.org/en/)
 
-<br />
 
 <p align="center">
   <img src="./fear.jpg" style=/>
   <img src="./greed.jpg" />
 </p>
 
-<br />
 
-## What is MMI?
+### What is MMI?
 MMI stands for market mood index. It's an investor sentiment tool that describes the current mood of the market. [Detailed info](https://medium.com/making-smalltalk/3-month-market-prediction-with-mmi-c497dd9d4739)
 
-<br />
 
-## From where are you getting this data?
+### From where are you getting this data?
 I'm currently using an api created by [Smallcase](https://www.smallcase.com/). They were kind enough to make it [public](https://mmi.smallcase.com) :)
 
-<br />
 
-## Who can use it?
+### Who can use it?
 Anyone! Just follow these steps to setup your own cron job:
 - Fork this repository
 - Create and AWS account
@@ -30,7 +26,6 @@ Anyone! Just follow these steps to setup your own cron job:
 - Install all the dependencies
 - Annnd deploy your serverless app on AWS 🎉🎉
 
-<br />
 
-## How are these alerts useful?
+### How are these alerts useful?
 These might be useful to you if you're a [passive investor](https://www.investopedia.com/terms/p/passiveinvesting.asp). MMI is a good overall indicator of market mood, which can be used to plan your investments.
