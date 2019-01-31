@@ -7,14 +7,16 @@ const { GREED, FEAR } = require('./zones.json');
 module.exports.mmiAlert = async () => {
   const url =
     'https://api.smallcase.com/market/indices/marketMoodIndex/current';
+  const upperBound = 80;
+  const lowerBound = 20;
 
   try {
     const response = await axios.get(url);
     const mmi = Math.trunc(response.data.data.currentValue);
 
     let zone;
-    const extremeGreed = mmi >= 71;
-    const extremeFear = mmi <= 29;
+    const extremeGreed = mmi > upperBound;
+    const extremeFear = mmi < lowerBound;
 
     if (extremeGreed) {
       zone = GREED;
