@@ -60,6 +60,9 @@ typings/
 # next.js build output
 .next
 
+# os files
+.DS_Store
+
 # Serverless directories
 .serverless
 
