@@ -10,4 +10,4 @@ functions:
     events:
     - schedule:
         rate: cron(30 5 ? * MON-FRI *)
-        enabled: false
+        enabled: true
