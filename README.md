@@ -19,7 +19,7 @@ I'm currently using an api created by [Smallcase](https://www.smallcase.com/). T
 ### Who can use it?
 Anyone! Just follow these steps to setup your own cron job:
 - Fork this repository
-- Create and AWS account
+- Create an AWS account
 - [Setup Severless on your machine](https://serverless.com/framework/docs/providers/aws/guide/quick-start/)
 - [Generate email credentials for mailer library](https://www.npmjs.com/package/gmail-send#preparational-step-this-step-is-required-only-if-you-are-using-two-step-verrification)
 - Save those credentials in json format in the root directory
