@@ -3,7 +3,7 @@ Send email alerts whenever mmi crosses a threshold value. This is scheduled cron
 
 <br />
 
-<p style="text-align: center;">
+<p align="center">
   <img src="./fear.jpg" style=/>
   <img src="./greed.jpg" />
 </p>
