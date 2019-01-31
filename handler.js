@@ -10,18 +10,18 @@ module.exports.mmiAlert = async () => {
 
   try {
     const response = await axios.get(url);
-    const currentValue = Math.trunc(response.data.data.currentValue);
+    const mmi = Math.trunc(response.data.data.currentValue);
 
     let zone;
-    const extremeGreed = currentValue >= 71;
-    const extremeFear = currentValue <= 29;
+    const extremeGreed = mmi >= 71;
+    const extremeFear = mmi <= 29;
 
     if (extremeGreed) {
       zone = GREED;
-      sendMail(zone, currentValue);
+      await sendMail(zone, mmi);
     } else if (extremeFear) {
       zone = FEAR;
-      sendMail(zone, currentValue);
+      await sendMail(zone, mmi);
     }
 
     return null;
