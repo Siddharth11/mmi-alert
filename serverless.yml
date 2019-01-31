@@ -11,3 +11,10 @@ functions:
     - schedule:
         rate: cron(30 5 ? * MON-FRI *)
         enabled: true
+package:
+  exclude:
+    - images/**
+    - README.md
+    - package.json
+    - package-lock.json
+    - LICENSE

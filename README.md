@@ -3,8 +3,8 @@ Send email alerts whenever mmi crosses a threshold value. This is a scheduled cr
 
 
 <p align="center">
-  <img src="./fear.jpg" style=/>
-  <img src="./greed.jpg" />
+  <img src="images/fear.jpg" style=/>
+  <img src="images/greed.jpg" />
 </p>
 
 
