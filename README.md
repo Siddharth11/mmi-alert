@@ -1,5 +1,5 @@
 # MMI Alert
-Send email alerts whenever mmi crosses a threshold value. This is scheduled cron (runs Mon-Fri at 11am IST) job built using [AWS Lamda](https://aws.amazon.com/lambda/), [Serverless](https://serverless.com/) and [Node](https://nodejs.org/en/)
+Send email alerts whenever mmi crosses a threshold value. This is a scheduled cron (runs Mon-Fri at 11am IST) job built using [AWS Lamda](https://aws.amazon.com/lambda/), [Serverless](https://serverless.com/) and [Node](https://nodejs.org/en/)
 
 <br />
 
