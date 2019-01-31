@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/Siddharth11/mmi-alert#readme",
   "dependencies": {
-    "axios": "^0.18.0"
+    "axios": "^0.18.0",
+    "gmail-send": "^1.2.14"
   }
 }
