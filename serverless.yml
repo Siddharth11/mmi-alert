@@ -9,5 +9,5 @@ functions:
     handler: handler.mmiAlert
     events:
     - schedule:
-        rate: cron(*/5 * * * ? *)
+        rate: cron(30 5 ? * MON-FRI *)
         enabled: false
