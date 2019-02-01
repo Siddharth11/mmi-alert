@@ -1,5 +1,3 @@
-'use strict';
-
 const axios = require('axios');
 const sendMail = require('./sendMail.js');
 const CONSTANTS = require('./constants');
